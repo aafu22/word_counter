@@ -31,16 +31,11 @@ function App() {
     <>
       <Navbar title="TextUtils" mode={mode} toggleMode={toggleMode} />
       <div className="container my-3">
-        <Routes>
-          {/* ✅ Home Page */}
-          <Route path="/" element={<TextForm heading="Enter text to analyze" mode={mode} showAlert={showAlert} />} />
-          
-          {/* ✅ Additional Route for /word_counter */}
-          <Route path="/word_counter" element={<TextForm heading="Word Counter" mode={mode} showAlert={showAlert} />} />
-        </Routes>
+         <TextForm heading="Enter text to analyze" mode={mode} showAlert={showAlert} />
+            
       </div>
     </>
-  );
+  )
 }
 
 export default App;
